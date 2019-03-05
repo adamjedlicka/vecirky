@@ -1,0 +1,18 @@
+Aplikace Lepší večírky umožňuje klientům objednání na mírů pořádaných večírků naší
+agenturou. Po přihlášení (popř. registraci) se klientovi zobrazí seznam jeho objednaných
+večírků, které si může prohlížet a upravovat, a možnost zadat novou objednávku na
+večírek. Při objednání večírku klient vyplní požadované informace, jako je například
+místo a datum konání, typ večírku nebo extra požadavky. U každého svého večírku může
+přispívat do diskuse, kde mu mohou odpovědět pracovníci naší agentury. Klient může také
+objednaný večírek zrušit, ale pouze pokud datum konání večírku je dále než 14 dní od
+aktuálního data.
+
+Řadový pracovník agentury, vidí v aplikace večírky které mu vedení společnosti přiřadilo
+na starost. Vidí tedy všechny detaily večírku a může přispívat do diskuse.
+
+Manažer naší agentury vidí všechny večírky, které kdy byli objednány od všech zákazníků
+a k večírkům které jsou aktuálně objednané může přidávat řadové pracovníky jako
+pořadatele danného večírku. Může také přispívat do duskusí a na rozdíl od zákazníka
+může zrušit i večírky, které jsou naplánovány na datum blíže než 14 dní. Dále také vidí
+všechny zákazníky a může si o nich zobrazit různé informace - např. kdy se
+zaregistrovali a kolik si objednali večírků.

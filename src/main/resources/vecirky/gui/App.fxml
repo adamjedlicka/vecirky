@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="540.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vecirky.gui.App">
+   <children>
+      <TabPane layoutY="29.0" prefHeight="691.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab fx:id="homeTab" onSelectionChanged="#onHomeTabAction" text="Domů">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="15.0" layoutY="15.0" prefHeight="15.0" prefWidth="200.0" text="Celkový počet klientů:" />
+                        <Label layoutX="15.0" layoutY="45.0" prefHeight="15.0" prefWidth="200.0" text="Celkový počet pořadatelů:" />
+                        <Label fx:id="totalClientsLabel" layoutX="215.0" layoutY="15.0" text="9001" />
+                        <Label fx:id="totalPromotersLabel" layoutX="215.0" layoutY="45.0" text="9001" />
+                        <Label fx:id="totalEventsLabel" layoutX="215.0" layoutY="75.0" text="9001" />
+                        <Label layoutX="15.0" layoutY="75.0" prefHeight="15.0" prefWidth="200.0" text="Celkový počet eventů:" />
+                        <Label fx:id="totalPricesLabel" layoutX="215.0" layoutY="107.0" text="9001" />
+                        <Label layoutX="14.0" layoutY="107.0" prefHeight="15.0" prefWidth="200.0" text="Celková cena eventů:" />
+                        <Label fx:id="eventsWeeklyLabel" layoutX="215.0" layoutY="136.0" text="9001" />
+                        <Label layoutX="14.0" layoutY="136.0" prefHeight="15.0" prefWidth="200.0" text="Eventy za tento týden:" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="eventsTab" text="Eventy">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+          <Tab fx:id="clientsTab" onSelectionChanged="#onClientsTabAction" text="Klienti">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="572.0" prefWidth="1122.0" />
+            </content>
+          </Tab>
+          <Tab fx:id="promotersTab" text="Pořadatelé">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <VBox fx:id="notificationArea" prefHeight="511.0" prefWidth="200.0" spacing="15.0" style="-fx-background-color: null;" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+   </children>
+</AnchorPane>
